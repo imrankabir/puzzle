@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    display: flex;
+    user-select: none;
+    min-height: 100vh;
+    align-items: center;
+    background: #f0f0f0;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+.container {
+    text-align: center;
+}
+#puzzle-container {
+    gap: 5px;
+    display: grid;
+    margin: 20px auto;
+    grid-template-rows: repeat(4, 80px);
+    grid-template-columns: repeat(4, 80px);
+}
+.tile {
+    color: white;
+    display: flex;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 5px;
+    background: #007bff;
+    align-items: center;
+    justify-content: center;
+}
+.tile.empty {
+    cursor: default;
+    background: transparent;
+}
+button {
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #007b5e;
+  display: inline-block;
+}
+button:hover {
+  background: #005f4a;
+}

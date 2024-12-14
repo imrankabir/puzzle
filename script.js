@@ -1,8 +1,11 @@
-const container = document.querySelector('#puzzle-container');
-const shuffleBtn = document.querySelector('#shuffle-btn');
-
 const size = 4;
 let tiles = [];
+
+const shuffleBtn = document.querySelector('#shuffle');
+const container = document.querySelector('#container');
+
+const get = (k, d) => JSON.parse(localStorage.getItem(`tracker-${k}`)) ?? d;
+const set = (k, v) => localStorage.setItem(`tracker-${k}`, JSON.stringify(v));
 
 const create = e => {
     container.innerHTML = '';

@@ -11,7 +11,7 @@ body {
 .container {
     text-align: center;
 }
-#puzzle-container {
+#container {
     gap: 5px;
     display: grid;
     margin: 20px auto;
